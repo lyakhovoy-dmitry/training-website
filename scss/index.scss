@@ -77,3 +77,143 @@ h6 {
 /*  
     *Custom Styles
 */
+
+$color-accent: #ffe816;
+$color-base: #fff;
+$color-shadow: #424242;
+$accent-alpha: 1;
+
+/* 
+*   Blocks
+*/
+
+.header {
+    position: relative;
+    height: 150px;
+
+    .title {
+        position: absolute;
+        font-size: 80px;
+        color: $color-base;
+        text-shadow: $color-shadow 2px 2px;
+    }
+
+    .container {
+        height: 120px;
+        width: 100vw;
+    }
+
+    .frame {
+        height: inherit;
+        width: inherit;
+        position: relative;
+        top: 30px;
+        left: 30px;
+    }
+}
+.container {
+    height: inherit;
+    width: inherit;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.title {
+    background-color: transparent;
+    font-family: "Lucida Sans Unicode";
+    z-index: 50;
+}
+
+.frame {
+    display: block;
+    border: 2px solid #000;
+    z-index: 10;
+}
+
+.content {
+    margin: 0px 0px 0px 0px;
+    max-width: 960px;
+    font-size: 30px;
+}
+
+.capital {
+    display: inline-flex;
+    position: relative;
+    top: 0;
+    left: 20px;
+    font-size: 70px;
+}
+
+.capital__letter {
+    position: relative;
+    top: 0;
+    z-index: 30;
+}
+
+.capital__block {
+    position: relative;
+    top: 10px;
+    left: -30px;
+    height: 30px;
+    width: 30px;
+    z-index: 9;
+
+    .frame {
+        height: inherit;
+        width: inherit;
+        position: relative;
+        border-width: 1px;
+        top: 10px;
+        left: -10px;
+    }
+}
+
+/* 
+*   Positioning
+*/
+
+.centered {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-around;
+}
+
+.lefted {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: start;
+}
+
+/* 
+*   Coloring
+*/
+
+.accent {
+    background-color: rgba($color-accent, $accent-alpha);
+}
+
+.blank-color {
+    height: inherit;
+    width: inherit;
+    background-color: rgba($color-accent, $accent-alpha);
+}
+
+/*
+*   Text
+*/
+
+p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 30px;
+    z-index: 30;
+}
+
+/* 
+*   Effects
+*/
+
+.of-hide {
+    overflow: hidden;
+}
