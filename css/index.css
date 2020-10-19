@@ -87,3 +87,65 @@ h6 {
 /*  
     *Custom Styles
 */
+.header {
+  position: relative;
+  height: 120px;
+  width: 100vw;
+}
+
+.header .title {
+  position: absolute;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: #424242 2px 2px;
+}
+
+.header .frame {
+  height: inherit;
+  width: inherit;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.container {
+  height: inherit;
+  width: inherit;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.accent {
+  background-color: #ffe816;
+}
+
+.title {
+  background-color: transparent;
+  font-family: "Lucida Sans Unicode";
+  z-index: 50;
+}
+
+.frame {
+  display: block;
+  border: 2px solid #000;
+  z-index: 10;
+}
+
+.blank-color {
+  height: inherit;
+  width: inherit;
+  background-color: #ffe816;
+}

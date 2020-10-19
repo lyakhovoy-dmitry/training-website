@@ -77,3 +77,65 @@ h6 {
 /*  
     *Custom Styles
 */
+
+$color-accent: #ffe816;
+$color-base: #fff;
+$color-shadow: #424242;
+$accent-alpha: 1;
+
+.header {
+    position: relative;
+    height: 120px;
+    width: 100vw;
+
+    .title {
+        position: absolute;
+        font-size: 80px;
+        color: $color-base;
+        text-shadow: $color-shadow 2px 2px;
+    }
+
+    .frame {
+        height: inherit;
+        width: inherit;
+        position: relative;
+        top: 30px;
+        left: 30px;
+    }
+}
+.container {
+    height: inherit;
+    width: inherit;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.centered {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-around;
+}
+
+.accent {
+    background-color: rgba($color-accent, $accent-alpha);
+}
+
+.title {
+    background-color: transparent;
+    font-family: "Lucida Sans Unicode";
+    z-index: 50;
+}
+
+.frame {
+    display: block;
+    border: 2px solid #000;
+    z-index: 10;
+}
+
+.blank-color {
+    height: inherit;
+    width: inherit;
+    background-color: rgba($color-accent, $accent-alpha);
+}
